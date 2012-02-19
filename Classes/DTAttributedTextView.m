@@ -21,6 +21,8 @@
 
 @implementation DTAttributedTextView
 
+@dynamic textDelegate;
+
 - (id)initWithFrame:(CGRect)frame
 {
 	self = [super initWithFrame:frame];
@@ -219,6 +221,5 @@
 
 @synthesize attributedString;
 @synthesize contentView;
-@synthesize textDelegate;
 
 @end

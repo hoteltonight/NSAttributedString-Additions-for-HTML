@@ -31,6 +31,8 @@ static pthread_mutex_t fontLock;
 
 @implementation DTCoreTextFontDescriptor
 
+@dynamic symbolicTraits;
+
 + (void)initialize
 {
 #if __IPHONE_OS_VERSION_MIN_REQUIRED >= __IPHONE_4_3
@@ -801,8 +803,6 @@ static pthread_mutex_t fontLock;
 @synthesize monospaceTrait;
 @synthesize verticalTrait;
 @synthesize UIoptimizedTrait;
-
-@synthesize symbolicTraits;
 
 @synthesize stylisticClass;
 @synthesize smallCapsFeature;
